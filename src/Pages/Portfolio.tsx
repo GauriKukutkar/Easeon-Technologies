@@ -1,5 +1,5 @@
 import Evolution from "@/Sections/Evolution";
-import FounderStory from "@/Sections/founderstory";
+import FounderStory from "../Sections/FounderStory";
 import Newproductlaunch from "@/Sections/newproductlaunch";
 import Projects from "@/Sections/Projects";
 import { motion } from "framer-motion";

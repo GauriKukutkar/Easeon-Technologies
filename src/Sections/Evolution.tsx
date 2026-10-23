@@ -68,7 +68,6 @@ const journey = [
 
 const JourneyCard = ({
   item,
-  index,
 }: {
   item: (typeof journey)[number];
   index: number;
