@@ -3,8 +3,9 @@ import { ArrowRight } from "lucide-react";
 
 import HeroLogo from "../assets/Logos/Easeon_logo.png";
 import Majuidli from "../assets/Logos/maju_idli.jpeg";
-import ansh from "../assets/Logos/ansh.png";
-import Dhanishta from "../assets/Logos/dhanishta.png";
+// import ansh from "../assets/Logos/ansh.png";
+// import Dhanishta from "../assets/Logos/dhanishta.png";
+import Sparkle from "../assets/Logos/sparkle_solutions_logo.jpeg";
 import Haircrown from "../assets/Logos/Hair_crown_logo.png";
 import Sewa from "../assets/Logos/sewa.jpeg";
 import { CheckCircle2, Play, } from "lucide-react";
@@ -18,6 +19,8 @@ import { Search, ClipboardList, PencilRuler, Code2, Rocket,} from "lucide-react"
 import TechStack from "../Sections/tech_stack";
 import Marketing from "../Sections/Marketing";
 import CTA from "../Sections/CTA";
+
+import { Link } from "react-router-dom";
 
 const Home = () => {
 
@@ -166,9 +169,13 @@ const process = [
 
               <div className="mt-10 flex flex-wrap gap-5">
 
-                <button className="group rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-7 py-4 text-white font-semibold shadow-xl transition-all hover:scale-105">
-                  Book a Free Consultation
-                </button>
+<Link
+  to="/contact"
+  className="group inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-7 py-4 font-semibold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+>
+  Book a Free Consultation
+</Link>
+
 
                 <button className="group rounded-xl border border-gray-200 bg-white px-7 py-4 font-semibold text-gray-700 shadow-sm hover:shadow-lg transition">
                   Explore Solutions
@@ -241,81 +248,89 @@ const process = [
       </section>
 
 {/* ===================== TRUSTED CLIENTS ===================== */}
+<section className="relative -mt-15 overflow-hidden bg-gradient-to-b from-white via-blue-50/30 to-white py-14 md:py-20">
+  <div className="mx-auto max-w-7xl px-6 lg:px-10">
 
-<section className="py-14 bg-white -mt-15">
-  <div className="max-w-7xl mx-auto px-6 lg:px-10">
+    {/* Section Heading */}
+    <div className="mx-auto max-w-3xl text-center">
+      <span className="inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-blue-700">
+        <span className="h-2 w-2 rounded-full bg-blue-600" />
+        Our Client Network
+      </span>
 
-    {/* Heading */}
-    <div className="text-center">
-      {/* <p className="text-xs font-semibold uppercase tracking-[0.3em] text-blue-600">
-        TRUSTED BY INNOVATIVE BUSINESSES
-      </p> */}
+      <h3 className="mt-5 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
+        Businesses We{" "}
+        <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+          Work With
+        </span>
+      </h3>
 
-      <h3 className="mt-2 text-2xl font-bold  text-black-600">
- TRUSTED BY INNOVATIVE BUSINESSES      </h3>
-
-      {/* <p className="mt-3 max-w-2xl mx-auto text-gray-500">
-        From startups to established businesses, we build software that powers
-        growth through modern technology.
-      </p> */}
+      <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-500 md:text-base">
+        Supporting businesses across industries with innovative technology,
+        creative digital solutions, and a commitment to growth.
+      </p>
     </div>
 
-    {/* Logos */}
-    <div className="mt-10 border-y border-gray-100 py-10">
-
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-center justify-items-center gap-y-10">
+    {/* Client Logos */}
+    <div className="mt-12 border-y border-slate-200/80 py-8 md:py-10">
+      <div className="grid grid-cols-2 items-center justify-items-center gap-5 md:grid-cols-4 md:gap-6">
 
         {/* Maju Idli */}
-        <div className="group flex items-center justify-center">
+        <div className="group flex h-32 w-full items-center justify-center rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-orange-200 hover:shadow-lg hover:shadow-orange-100/50 md:h-36">
           <img
             src={Majuidli}
             alt="Maju Idli"
-            className="max-h-20 md:max-h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
-          />
-        </div>
-
-        {/* Ansh */}
-        <div className="group flex items-center justify-center">
-          <img
-            src={ansh}
-            alt="Ansh"
-            className="max-h-20 md:max-h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
-          />
-        </div>
-
-        {/* Dhanishta */}
-        <div className="group flex items-center justify-center">
-          <img
-            src={Dhanishta}
-            alt="Dhanishta"
-            className="max-h-20 md:max-h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
+            loading="lazy"
+            className="max-h-24 max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
           />
         </div>
 
         {/* Hair Crown */}
-        <div className="group flex items-center justify-center">
+        <div className="group flex h-32 w-full items-center justify-center rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-blue-100/50 md:h-36">
           <img
             src={Haircrown}
             alt="Hair Crown"
-            className="max-h-20 md:max-h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
+            loading="lazy"
+            className="max-h-24 max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
           />
         </div>
 
         {/* Sewa Infrastructure */}
-        <div className="group flex items-center justify-center">
+        <div className="group flex h-32 w-full items-center justify-center rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-amber-200 hover:shadow-lg hover:shadow-amber-100/50 md:h-36">
           <img
             src={Sewa}
             alt="Sewa Infrastructure"
-            className="max-h-20 md:max-h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
+            loading="lazy"
+            className="max-h-24 max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+
+        {/* Sparkle Coaching */}
+        <div className="group flex h-32 w-full items-center justify-center rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-red-200 hover:shadow-lg hover:shadow-red-100/50 md:h-36">
+          <img
+            src={Sparkle}
+            alt="Sparkle Coaching"
+            loading="lazy"
+            className="max-h-24 max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
           />
         </div>
 
       </div>
+    </div>
 
+    {/* Closing Statement */}
+    <div className="mt-8 text-center">
+      <p className="text-sm text-slate-500 md:text-base">
+        Every partnership begins with{" "}
+        <span className="font-semibold text-slate-800">
+          innovation, collaboration, and trust.
+        </span>
+      </p>
     </div>
 
   </div>
 </section>
+
 
 {/* ===================== MINI STATS ===================== */}
 

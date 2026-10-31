@@ -1,11 +1,15 @@
 import {
   Mail,
-  ArrowUpRight,
 } from "lucide-react";
 
 import { FaLinkedin } from "react-icons/fa";
 
 import { motion } from "framer-motion";
+// import Rahul from "../assets/Teams/Rahul.jpeg";
+// import Minal from "../assets/Teams/minal.jpeg";
+// import Gauri from "../assets/Teams/Gauri.jpeg";
+// import Sampriti from "../assets/Teams/Sampriti.jpeg";
+// import Vrushabh from "../assets/Teams/vrushabh.jpeg";
 
 const Team = () => {
   return (
@@ -111,28 +115,9 @@ const Team = () => {
     {/* FOUNDER FEATURE */}
     {/* ================================================= */}
 
-    <motion.div
-      initial={{
-        opacity: 0,
-        y: 35,
-      }}
-      whileInView={{
-        opacity: 1,
-        y: 0,
-      }}
-      viewport={{
-        once: true,
-        margin: "-50px",
-      }}
-      transition={{
-        duration: 0.7,
-      }}
-      className="relative mx-auto mt-12 max-w-4xl overflow-hidden rounded-[28px] border border-blue-100 bg-gradient-to-br from-white via-white to-blue-50/60 p-5 shadow-[0_20px_70px_rgba(37,99,235,0.08)] sm:p-7"
-    >
-
       {/* Card Glow */}
 
-      <motion.div
+      {/* <motion.div
         animate={{
           scale: [1, 1.15, 1],
           opacity: [0.15, 0.3, 0.15],
@@ -143,14 +128,14 @@ const Team = () => {
           ease: "easeInOut",
         }}
         className="absolute -right-20 -top-20 h-48 w-48 rounded-full bg-blue-200 blur-[70px]"
-      />
+      /> */}
 
 
-      <div className="relative grid items-center gap-7 md:grid-cols-[190px_1fr]">
+      {/* <div className="relative grid items-center gap-7 md:grid-cols-[190px_1fr]"> */}
 
         {/* Founder Image */}
 
-        <motion.div
+        {/* <motion.div
           whileHover={{
             scale: 1.03,
           }}
@@ -163,11 +148,9 @@ const Team = () => {
             className="h-[210px] w-[190px] object-cover"
           />
 
-        </motion.div>
+        </motion.div> */}
 
-
-        {/* Founder Info */}
-
+{/* 
         <div className="text-center md:text-left">
 
           <span className="text-[9px] font-semibold uppercase tracking-[0.25em] text-blue-600">
@@ -187,9 +170,6 @@ const Team = () => {
             technology should solve real problems, create measurable
             value and help businesses move forward.
           </p>
-
-
-          {/* Buttons */}
 
           <div className="mt-5 flex flex-wrap justify-center gap-3 md:justify-start">
 
@@ -227,9 +207,7 @@ const Team = () => {
 
         </div>
 
-      </div>
-
-    </motion.div>
+      </div> */}
 
 
     {/* ========================================================= */}
@@ -239,27 +217,27 @@ const Team = () => {
 <div className="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-5 sm:grid-cols-2">
 
   {[
-    // {
-    //   name: "Rahul Borkar",
-    //   role: "Founder",
-    //   image: "/team/rahul-borkar.jpg",
-    //   linkedin: "https://www.linkedin.com/",
-    //   email: "mailto:rahul@easeontech.com",
-    // },
+    {
+      name: "Rahul Borkar",
+      role: "Founder",
+      image: "/team/ritesh-selote.jpg",
+      linkedin: "https://www.linkedin.com/",
+      email: "mailto:rahul@easeontech.com",
+    },
     {
       name: "Minal Sonsare",
       role: "Co-Founder & CEO",
-      image: "/team/minal-sonsare.jpg",
+      image: "/team/ritesh-selote.jpg",
       linkedin: "https://www.linkedin.com/",
       email: "mailto:minal@easeontech.com",
     },
-    {
-      name: "Ritesh Selote",
-      role: "CTO",
-      image: "/team/ritesh-selote.jpg",
-      linkedin: "https://www.linkedin.com/",
-      email: "mailto:ritesh@easeontech.com",
-    },
+    // {
+    //   name: "Ritesh Selote",
+    //   role: "CTO",
+    //   image: "/team/ritesh-selote.jpg",
+    //   linkedin: "https://www.linkedin.com/",
+    //   email: "mailto:ritesh@easeontech.com",
+    // },
   ].map((member, index) => (
 
     <motion.div
@@ -329,16 +307,9 @@ const Team = () => {
 {/* TEAM — 4 CARDS */}
 {/* ========================================================= */}
 
-<div className="mx-auto mt-6 grid max-w-6xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+<div className="mx-auto mt-6 grid max-w-6xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
 
   {[
-    {
-      name: "Shivam Pathankar",
-      role: "Sales Head",
-      image: "/team/shivam-pathankar.jpg",
-      linkedin: "https://www.linkedin.com/",
-      email: "mailto:shivam@easeontech.com",
-    },
     {
       name: "Vrushabh Latkar",
       role: "Graphics Designer",

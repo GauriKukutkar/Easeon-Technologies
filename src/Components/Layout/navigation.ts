@@ -2,7 +2,7 @@ import {
   BrainCircuit,
   Cloud,
   Code2,
-  Database,
+  // Database,
   Globe,
   Megaphone,
   Palette,
@@ -36,65 +36,70 @@ export const navItems: NavItem[] = [
     title: "Product",
     path: "/Product",
   },
+  // {
+  //   title: "Career",
+  //   path: "/career",
+  // },
   {
     title: "Portfolio",
     path: "/Portfolio",
   },
+
 ];
 
 export const solutions: SolutionItem[] = [
   {
     title: "Software Development",
     desc: "Custom enterprise software tailored to your business.",
-    path: "/solutions/software-development",
+    path: "/SoftwareDevelopment",
     icon: Code2,
   },
   {
     title: "Web Development",
     desc: "Modern websites, portals and web platforms.",
-    path: "/solutions/web-development",
+    path: "/WebDevelopment",
     icon: Globe,
   },
   {
     title: "Mobile App Development",
     desc: "Android & iOS apps with premium experiences.",
-    path: "/solutions/mobile-app-development",
+    path: "/MobileAppDevelopment",
     icon: Smartphone,
   },
   {
     title: "SaaS Development",
     desc: "Scalable cloud-based software products.",
-    path: "/solutions/saas-development",
+    path: "/SaaSDevelopment",
     icon: Cloud,
   },
   {
     title: "AI Solutions",
     desc: "Automation, AI integration & intelligent systems.",
-    path: "/solutions/ai-solutions",
+    path: "/AISolutions",
     icon: BrainCircuit,
   },
   {
     title: "UI / UX Design",
     desc: "Beautiful, intuitive and user-first interfaces.",
-    path: "/solutions/ui-ux-design",
+    path: "/UIUXDesign",
     icon: Palette,
   },
   {
     title: "Digital Marketing",
     desc: "SEO, branding and social media growth.",
-    path: "/solutions/digital-marketing",
+    path: "/DigitalMarketing",
     icon: Megaphone,
   },
   {
     title: "Performance Marketing",
     desc: "Google Ads, Meta Ads & conversion optimization.",
-    path: "/solutions/performance-marketing",
+    path: "/PerformanceMarketing",
     icon: TrendingUp,
   },
-  {
-    title: "Cloud & DevOps",
-    desc: "Infrastructure, CI/CD & cloud deployments.",
-    path: "/solutions/cloud-devops",
-    icon: Database,
-  },
+  // {
+  //   title: "Cloud & DevOps",
+  //   desc: "Infrastructure, CI/CD & cloud deployments.",
+  //   path: "/solutions/cloud-devops",
+  //   icon: Database,
+  // },
 ];

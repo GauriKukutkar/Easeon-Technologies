@@ -11,7 +11,7 @@ const MainLayout = () => {
 
       <Header />
 
-      <main className="pt-20">
+      <main className="m-0 p-0">
         <Outlet />
       </main>
 

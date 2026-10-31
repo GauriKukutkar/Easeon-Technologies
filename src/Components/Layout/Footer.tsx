@@ -153,7 +153,7 @@ const Footer = () => {
               </NavLink>
 
               <NavLink
-                to="/careers"
+                to="/career"
                 className="text-[#BFD3F8] transition hover:translate-x-1 hover:text-[#4DB4FF]"
               >
                 Careers

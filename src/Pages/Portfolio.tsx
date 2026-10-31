@@ -1,7 +1,7 @@
 import Evolution from "@/Sections/Evolution";
 import FounderStory from "../Sections/FounderStory";
 import Newproductlaunch from "@/Sections/newproductlaunch";
-import Projects from "@/Sections/Projects";
+// import Projects from "@/Sections/Projects";
 import { motion } from "framer-motion";
 import {
   ArrowDownRight,
@@ -321,7 +321,7 @@ const Portfolio = () => {
 
     <FounderStory />
 
-    <Projects />
+    {/* <Projects /> */}
     <Evolution />
     <Newproductlaunch />
 

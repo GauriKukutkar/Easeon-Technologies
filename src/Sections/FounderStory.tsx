@@ -3,11 +3,16 @@ import {
   ArrowDownRight,
   BriefcaseBusiness,
   Lightbulb,
-  Rocket,
+  Code2,
+  Search,
 } from "lucide-react";
+
+import Founder from "../assets/Teams/Rahul.jpeg";
 
 const FounderStory = () => {
   return (
+
+    <> 
     <section className="relative overflow-hidden bg-white py-24 sm:py-32 lg:py-40">
 
       {/* ================================================= */}
@@ -151,7 +156,7 @@ const FounderStory = () => {
                 <div className="relative aspect-[4/5] overflow-hidden rounded-[30px] bg-slate-100">
 
                   <img
-                    src="/images/founder.jpg"
+                    src={Founder}
                     alt="Rahul Borkar, Founder of Easeon Technologies"
                     className="h-full w-full object-cover"
                   />
@@ -590,19 +595,12 @@ const FounderStory = () => {
             {/* CHAPTER TIMELINE */}
             {/* ================================================= */}
 
-            <div className="relative mt-14">
-
-              {/* Timeline line */}
+            {/* <div className="relative mt-14">
 
               <div className="absolute bottom-8 left-[22px] top-8 w-px bg-blue-100" />
 
 
               <div className="space-y-8">
-
-
-                {/* ================================================= */}
-                {/* CHAPTER 01 */}
-                {/* ================================================= */}
 
                 <motion.div
                   initial={{
@@ -646,11 +644,6 @@ const FounderStory = () => {
                   </div>
 
                 </motion.div>
-
-
-                {/* ================================================= */}
-                {/* CHAPTER 02 */}
-                {/* ================================================= */}
 
                 <motion.div
                   initial={{
@@ -697,9 +690,6 @@ const FounderStory = () => {
                 </motion.div>
 
 
-                {/* ================================================= */}
-                {/* CHAPTER 03 */}
-                {/* ================================================= */}
 
                 <motion.div
                   initial={{
@@ -748,8 +738,7 @@ const FounderStory = () => {
 
               </div>
 
-            </div>
-
+            </div> */}
 
             {/* ================================================= */}
             {/* CLOSING QUOTE */}
@@ -805,6 +794,209 @@ const FounderStory = () => {
       </div>
 
     </section>
+
+
+
+{/* ================================================= */}
+{/* MINAL SON SARE - CO-FOUNDER STORY */}
+{/* ================================================= */}
+<section className="relative w-full overflow-x-clip bg-white -mt-40 py-20 sm:py-24 lg:py-28">
+
+  <motion.section
+    className="w-full"
+    initial={{ opacity: 0, y: 35 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.15 }}
+    transition={{ duration: 0.8 }}
+  >
+
+    {/* CENTERED CONTENT CONTAINER */}
+    <div className="mx-auto w-full max-w-[1350px] px-5 sm:px-8 lg:px-12 xl:px-16">
+
+      <div className="grid w-full min-w-0 items-center gap-10 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-10">
+
+        {/* LEFT - PROFILE / VISUAL */}
+        <div className="min-w-0">
+      <div className="relative overflow-hidden rounded-[30px] bg-gradient-to-br from-[#0B3B8F] via-[#0866FF] to-[#08B9D2] p-8 text-white sm:p-10">
+
+        <div className="absolute -right-16 -top-16 h-56 w-56 rounded-full border border-white/15" />
+        <div className="absolute -right-8 -top-8 h-40 w-40 rounded-full border border-white/15" />
+
+        <div className="relative z-10">
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/20 bg-white/10 backdrop-blur">
+            <Lightbulb size={27} />
+          </div>
+
+          <p className="mt-14 text-[10px] font-bold uppercase tracking-[0.3em] text-white/60">
+            The Thinking Behind The Technology
+          </p>
+
+          <h3 className="mt-5 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
+            Ideas need
+            <br />
+            more than
+            <br />
+            imagination.
+          </h3>
+
+          <p className="mt-6 max-w-sm text-sm leading-7 text-white/70">
+            They need research, technical understanding,
+            practical decisions and the determination
+            to make them work.
+          </p>
+
+          <div className="mt-12 border-t border-white/20 pt-6">
+            <p className="text-2xl font-semibold">
+              Minal Sonsare
+            </p>
+            <p className="mt-2 text-xs font-medium uppercase tracking-[0.2em] text-white/65">
+              Co-founder · Easeon Technologies
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-5 grid grid-cols-2 gap-4">
+        <div className="rounded-2xl border border-blue-100 bg-[#F3F8FF] p-5">
+          <Code2 size={23} className="text-blue-600" />
+          <p className="mt-4 text-sm font-bold text-[#101828]">
+            Technical Thinking
+          </p>
+          <p className="mt-1 text-xs leading-5 text-gray-500">
+            From concepts to functionality.
+          </p>
+        </div>
+
+        <div className="rounded-2xl border border-cyan-100 bg-[#F0FCFE] p-5">
+          <Search size={23} className="text-cyan-600" />
+          <p className="mt-4 text-sm font-bold text-[#101828]">
+            Research & Analysis
+          </p>
+          <p className="mt-1 text-xs leading-5 text-gray-500">
+            Understanding needs and opportunities.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* RIGHT - HER STORY */}
+    <div className="min-w-0">
+
+      <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-cyan-600">
+        The Co-founder's Journey
+      </p>
+
+      <h3 className="mt-5 text-3xl font-semibold leading-tight tracking-[-0.04em] text-[#101828] sm:text-4xl lg:text-5xl">
+        Beyond the idea.
+        <span className="block text-blue-600">
+          Into the details that matter.
+        </span>
+      </h3>
+
+      <p className="mt-7 text-sm leading-8 text-gray-500 sm:text-base">
+        Minal Sonsare brought a distinct combination of
+        technical understanding, analytical thinking and
+        practical perspective to the journey of Easeon.
+        Her involvement was not limited to understanding
+        the market; she was deeply involved in the thinking
+        and discussions behind the products themselves.
+      </p>
+
+      <p className=" text-sm leading-8 text-gray-500">
+        From evaluating technical requirements and discussing
+        product functionality to thinking through features,
+        workflows and user requirements, her contribution
+        played a major role in translating ideas into
+        practical digital solutions. Alongside the technical side, she invested in market
+        research, competitor analysis and understanding
+        customer expectations. She brought a straightforward
+        approach to every discussion, questioned assumptions
+        and focused on what actually made sense for the
+        business and its users.
+      </p>
+
+      <p className="mt-5 text-sm leading-8 text-gray-500">
+       
+      </p>
+
+      {/* SPECIAL PRODUCT HIGHLIGHT */}
+      <div className="mt-9 overflow-hidden rounded-2xl border border-blue-100 bg-[#F5F9FF]">
+
+        <div className="flex items-center justify-between gap-3 border-b border-blue-100 px-6 py-5">
+          <div>
+            <p className="text-[9px] font-bold uppercase tracking-[0.25em] text-blue-600">
+              Product Development Contribution
+            </p>
+            <h4 className="mt-2 text-xl font-semibold text-[#101828]">
+              Relax Mode
+            </h4>
+          </div>
+
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-600 text-white">
+            <BriefcaseBusiness size={21} />
+          </div>
+        </div>
+
+        <div className="p-6">
+          <p className="text-sm leading-7 text-gray-500">
+            Relax Mode reflects an important part of Minal's
+            contribution to Easeon's product journey. Her
+            involvement covered understanding the salon
+            industry's requirements, researching market
+            opportunities and contributing to technical
+            and functional product discussions.
+          </p>
+
+          <p className="mt-4 text-sm leading-7 text-gray-500">
+            Her perspective helped connect business needs
+            with product functionality, ensuring that
+            discussions were not just about what could
+            be built, but also about how the solution
+            should work in practice.
+          </p>
+
+          <div className="mt-6 flex flex-wrap gap-2">
+            {[
+              "Technical Understanding",
+              "Feature Planning",
+              "Market Research",
+              "Product Analysis",
+            ].map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-blue-100 bg-white px-3 py-2 text-[10px] font-semibold text-blue-700"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* CLOSING THOUGHT */}
+      <div className="mt-9 border-l-[3px] border-cyan-500 pl-6">
+        <p className="text-lg font-medium leading-8 tracking-tight text-[#101828] sm:text-xl">
+          "Being part of building something means
+          questioning it, understanding it, improving it
+          and making sure it works beyond the idea."
+        </p>
+
+        <p className="mt-4 text-[9px] font-bold uppercase tracking-[0.2em] text-gray-400">
+          Minal Sonsare · Co-founder
+        </p>
+      </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </motion.section>
+</section>
+
+
+</ >
+
   );
 };
 
