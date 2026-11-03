@@ -168,33 +168,21 @@ const Footer = () => {
 
             <div className="flex flex-col gap-4">
 
-              <NavLink
-                to="/product/relax-mode"
-                className="text-[#BFD3F8] transition hover:translate-x-1 hover:text-[#4DB4FF]"
-              >
-                Relax Mode
-              </NavLink>
+             <NavLink to="/Product" className="text-[#BFD3F8] transition hover:translate-x-1 hover:text-[#4DB4FF]">
+  Relax Mode
+</NavLink>
 
-              <NavLink
-                to="/product/relax-mode"
-                className="text-[#BFD3F8] transition hover:translate-x-1 hover:text-[#4DB4FF]"
-              >
-                Web Application
-              </NavLink>
+<NavLink to="/Product" className="text-[#BFD3F8] transition hover:translate-x-1 hover:text-[#4DB4FF]">
+  Web Application
+</NavLink>
 
-              <NavLink
-                to="/product/relax-mode"
-                className="text-[#BFD3F8] transition hover:translate-x-1 hover:text-[#4DB4FF]"
-              >
-                Projects Completed 
-              </NavLink>
+<NavLink to="/Product" className="text-[#BFD3F8] transition hover:translate-x-1 hover:text-[#4DB4FF]">
+  Projects Completed
+</NavLink>
 
-              <NavLink
-                to="/product"
-                className="text-[#BFD3F8] transition hover:translate-x-1 hover:text-[#4DB4FF]"
-              >
-                Upcoming Products
-              </NavLink>
+<NavLink to="/Product" className="text-[#BFD3F8] transition hover:translate-x-1 hover:text-[#4DB4FF]">
+  Upcoming Products
+</NavLink>
 
             </div>
 
