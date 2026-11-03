@@ -17,6 +17,11 @@ import MobileAppDevelopment from "@/Pages/MobileAppDevelopment";
 import PerformanceMarketing from "@/Pages/PerformanceMarketing";
 import SaaSDevelopment from "@/Pages/SaaSDevelopment";
 import DigitalMarketing from "@/Pages/DigitalMarketing";
+import NotFound from "@/Pages/Notfound";
+import CookiePolicy from "@/Pages/CookiePolicy";
+import HelpCenter from "@/Pages/HelpCenter";
+import TermsConditions from "@/Pages/Termsconditions";
+import Privacypolicy from "@/Pages/Privacypolicy";
 
 export const router = createBrowserRouter([
   {
@@ -98,6 +103,31 @@ export const router = createBrowserRouter([
         path: "DigitalMarketing",
         element: <DigitalMarketing />,
       },
+
+      {
+        path: "NotFound",
+        element: <NotFound />,
+      },
+
+      {
+  path: "CookiePolicy",
+  element: <CookiePolicy />,
+},
+
+      {
+  path: "HelpCenter",
+  element: <HelpCenter />,
+},
+
+{
+  path: "TermsConditions",
+  element: <TermsConditions />,
+},
+
+{
+  path: "Privacypolicy",
+  element: <Privacypolicy />,
+},
 
 
     ],

@@ -65,50 +65,43 @@ const Footer = () => {
 
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4">
-
-              {[
-                {
-                  icon: FaLinkedinIn,
-                  link: "#",
-                },
-                {
-                  icon: FaInstagram,
-                  link: "#",
-                },
-                {
-                  icon: FaFacebookF,
-                  link: "#",
-                },
-                {
-                  icon: FaYoutube,
-                  link: "#",
-                },
-                {
-    icon: FaXTwitter,
-    link: "#",
-  },
-              ].map((item, index) => {
-
-                const Icon = item.icon;
-
-                return (
-
-                  <a
-                    key={index}
-                    href={item.link}
-                    className="flex h-11 w-11 items-center justify-center rounded-xl border border-[#1C4387] bg-[#0A2A67] text-[#D8E7FF] transition-all duration-300 hover:-translate-y-1 hover:border-[#3DA5FF] hover:bg-[#0F56D9]"
-                  >
-
-                    <Icon size={18} />
-
-                  </a>
-
-                );
-
-              })}
-
-            </div>
+            <div className="mt-8 flex flex-wrap gap-2">
+  {[
+    {
+      icon: FaLinkedinIn,
+      link: "https://www.linkedin.com/company/eaaseon-technologies/",
+    },
+    {
+      icon: FaInstagram,
+      link: "https://www.instagram.com/easeontechofficial/",
+    },
+    {
+      icon: FaFacebookF,
+      link: "https://www.facebook.com/people/Easeon-Technologies/61595023891883/",
+    },
+    {
+      icon: FaYoutube,
+      link: "https://www.youtube.com/@EaseonTechnologies",
+    },
+    {
+      icon: FaXTwitter,
+      link: "https://x.com/EaseonTech",
+    },
+  ].map((item, index) => {
+    const Icon = item.icon;
+    return (
+      <a
+        key={index}
+        href={item.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex h-11 w-11 items-center justify-center rounded-xl border border-[#1C4387] bg-[#0A2A67] text-[#D8E7FF] transition-all duration-300 hover:-translate-y-1 hover:border-[#3DA5FF] hover:bg-[#0F56D9]"
+      >
+        <Icon size={18} />
+      </a>
+    );
+  })}
+</div>
 
           </div>
 
@@ -139,7 +132,7 @@ const Footer = () => {
               </NavLink>
 
               <NavLink
-                to="/insights"
+                to="/portfolio"
                 className="text-[#BFD3F8] transition hover:translate-x-1 hover:text-[#4DB4FF]"
               >
                 Inslights
@@ -220,35 +213,35 @@ const Footer = () => {
             <div className="flex flex-col gap-4">
 
               <NavLink
-                to="/solutions/software-development"
+                to="/SoftwareDevelopment"
                 className="text-[#BFD3F8] transition hover:translate-x-1 hover:text-[#4DB4FF]"
               >
                 Software Development
               </NavLink>
 
               <NavLink
-                to="/solutions/web-development"
+                to="/WebDevelopment"
                 className="text-[#BFD3F8] transition hover:translate-x-1 hover:text-[#4DB4FF]"
               >
                 Web Development
               </NavLink>
 
               <NavLink
-                to="/solutions/saas-development"
+                to="/SaaSDevelopment"
                 className="text-[#BFD3F8] transition hover:translate-x-1 hover:text-[#4DB4FF]"
               >
                 SaaS Platforms
               </NavLink>
 
               <NavLink
-                to="/solutions/ai-solutions"
+                to="/AISolutions"
                 className="text-[#BFD3F8] transition hover:translate-x-1 hover:text-[#4DB4FF]"
               >
                 AI Solutions
               </NavLink>
 
               <NavLink
-                to="/solutions/digital-marketing"
+                to="/DigitalMarketing"
                 className="text-[#BFD3F8] transition hover:translate-x-1 hover:text-[#4DB4FF]"
               >
                 Digital Marketing
@@ -316,7 +309,7 @@ const Footer = () => {
   {/* Email */}
 
   <a
-    href="mailto:hello@easeon.tech"
+    href="mailto:easeontechofficial@gmail.com"
     className="group flex items-start gap-4"
   >
     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#1C4387] bg-[#0A2A67] text-[#43A5FF] transition-all duration-300 group-hover:bg-[#1A75FF] group-hover:text-white">
@@ -329,7 +322,7 @@ const Footer = () => {
       </p>
 
       <span className="text-sm text-[#BFD3F8]">
-        hello@easeon.tech
+        easeontechofficial@gmail.com
       </span>
     </div>
   </a>
@@ -337,7 +330,7 @@ const Footer = () => {
   {/* Phone */}
 
   <a
-    href="tel:+91XXXXXXXXXX"
+    href="tel:+9196239 10069"
     className="group flex items-start gap-4"
   >
     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#1C4387] bg-[#0A2A67] text-[#43A5FF] transition-all duration-300 group-hover:bg-[#1A75FF] group-hover:text-white">
@@ -350,7 +343,7 @@ const Footer = () => {
       </p>
 
       <span className="text-sm text-[#BFD3F8]">
-        +91 XXXXX XXXXX
+        +91 96239 10069
       </span>
     </div>
   </a>
@@ -379,35 +372,35 @@ const Footer = () => {
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
 
             <NavLink
-              to="/privacy-policy"
+              to="/Privacypolicy"
               className="text-sm text-[#BFD3F8] transition hover:text-[#4DB4FF]"
             >
               Privacy Policy
             </NavLink>
 
             <NavLink
-              to="/terms-conditions"
+              to="/TermsConditions"
               className="text-sm text-[#BFD3F8] transition hover:text-[#4DB4FF]"
             >
               Terms & Conditions
             </NavLink>
 
             <NavLink
-              to="/cookies-policy"
+              to="/CookiePolicy"
               className="text-sm text-[#BFD3F8] transition hover:text-[#4DB4FF]"
             >
               Cookies Policy
             </NavLink>
 
-            <NavLink
+            {/* <NavLink
               to="/refund-policy"
               className="text-sm text-[#BFD3F8] transition hover:text-[#4DB4FF]"
             >
               Refund Policy
-            </NavLink>
+            </NavLink> */}
 
             <NavLink
-              to="/help_center"
+              to="/HelpCenter"
               className="text-sm text-[#BFD3F8] transition hover:text-[#4DB4FF]"
             >
               Help Center

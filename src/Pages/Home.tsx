@@ -8,7 +8,7 @@ import Majuidli from "../assets/Logos/maju_idli.jpeg";
 import Sparkle from "../assets/Logos/sparkle_solutions_logo.jpeg";
 import Haircrown from "../assets/Logos/Hair_crown_logo.png";
 import Sewa from "../assets/Logos/sewa.jpeg";
-import { CheckCircle2, Play, } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
 import RelaxMode1 from "../assets/images/relax_home.png";
 import Globe from "../assets/images/globe.png";
@@ -177,13 +177,20 @@ const process = [
 </Link>
 
 
-                <button className="group rounded-xl border border-gray-200 bg-white px-7 py-4 font-semibold text-gray-700 shadow-sm hover:shadow-lg transition">
-                  Explore Solutions
-                  <ArrowRight
-                    className="ml-2 inline transition group-hover:translate-x-1"
-                    size={18}
-                  />
-                </button>
+                <button
+  onClick={() =>
+    document.getElementById("solutions")?.scrollIntoView({
+      behavior: "smooth",
+    })
+  }
+  className="group rounded-xl border border-gray-200 bg-white px-7 py-4 font-semibold text-gray-700 shadow-sm hover:shadow-lg transition"
+>
+  Explore Solutions
+  <ArrowRight
+    className="ml-2 inline transition group-hover:translate-x-1"
+    size={18}
+  />
+</button>
 
               </div>
             </motion.div>
@@ -354,7 +361,7 @@ const process = [
 
           <div>
             <h3 className="text-3xl font-bold text-gray-900">
-              100+
+              10+
             </h3>
 
             <p className="text-sm text-gray-500">
@@ -398,7 +405,7 @@ const process = [
 
           <div>
             <h3 className="text-3xl font-bold text-gray-900">
-              40+
+              4+
             </h3>
 
             <p className="text-sm text-gray-500">
@@ -438,7 +445,7 @@ const process = [
 
 {/* ===================== FLAGSHIP PRODUCT ===================== */}
 
-<section className="relative overflow-hidden py-24 bg-gradient-to-b from-white to-blue-50/40">
+<section className="relative -mt-15 overflow-hidden py-24 bg-gradient-to-b from-white to-blue-50/40">
 
   {/* Background Blur */}
 
@@ -499,17 +506,23 @@ const process = [
 
         <div className="mt-12 flex flex-wrap gap-5">
 
-          <button className="rounded-xl bg-blue-600 px-8 py-4 text-white font-semibold shadow-lg hover:bg-blue-700 transition">
-            Explore Relax Mode
-          </button>
+         <a
+  href="https://relaxmode.in"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className="rounded-xl bg-blue-600 px-8 py-4 text-white font-semibold shadow-lg hover:bg-blue-700 transition">
+    Explore Relax Mode
+  </button>
+</a>
 
-          <button className="rounded-xl border border-gray-200 bg-white px-8 py-4 font-semibold flex items-center gap-2 hover:shadow-md">
+          {/* <button className="rounded-xl border border-gray-200 bg-white px-8 py-4 font-semibold flex items-center gap-2 hover:shadow-md">
 
             <Play size={18} />
 
             Google Play
 
-          </button>
+          </button> */}
 
         </div>
 
@@ -555,7 +568,7 @@ const process = [
 
 {/* ===================== SERVICES ===================== */}
 
-<section className="relative overflow-hidden py-28 bg-white">
+<section className="relative -mt-20  overflow-hidden py-28 bg-white" id="solutions">
 
   {/* Background Blur */}
 
@@ -604,7 +617,7 @@ const process = [
 
   <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
 
-    <p className="text-blue-600 text-xs font-semibold uppercase tracking-[0.25em]">
+    <p className="text-blue-600 -mt-5 text-xs font-semibold uppercase tracking-[0.25em]">
       WHAT WE DO
     </p>
 
@@ -673,14 +686,14 @@ const process = [
 
 
 {/* Industry we empower */}
-<section className="relative overflow-hidden bg-gradient-to-b from-white to-blue-50/30 py-28">
+<section className="relative overflow-hidden -mt-20  bg-gradient-to-b from-white to-blue-50/30 py-28">
 
   {/* Blur */}
   <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-blue-100 blur-[120px] opacity-40" />
 
   <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
-    <div className="grid lg:grid-cols-[40%_60%] gap-20 items-center">
+    <div className="grid -mt-15 lg:grid-cols-[40%_60%] gap-20 items-center">
 
       {/* Left */}
 
@@ -924,7 +937,7 @@ const process = [
   </svg>
 </motion.div>
 
-  <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
+  <div className="relative -mt-20  max-w-7xl mx-auto px-6 lg:px-10">
 
     <motion.div
   initial={{ opacity: 0, y: 40 }}

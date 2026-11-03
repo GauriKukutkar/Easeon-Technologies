@@ -181,28 +181,39 @@ const Product = () => {
               className="mt-9 flex flex-wrap gap-4"
             >
 
-              <button className="group flex items-center gap-2 rounded-xl bg-blue-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition-all hover:bg-blue-700 hover:shadow-xl">
+              <button
+  onClick={() =>
+    document.getElementById("ProductSuite")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    })
+  }
+  className="group flex items-center gap-2 rounded-xl bg-blue-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition-all hover:bg-blue-700 hover:shadow-xl"
+>
+  Explore Our Products
 
-                Explore Our Products
+  <ArrowRight
+    size={17}
+    className="transition-transform group-hover:translate-x-1"
+  />
+</button>
 
-                <ArrowRight
-                  size={17}
-                  className="transition-transform group-hover:translate-x-1"
-                />
+<button
+  onClick={() =>
+    document.getElementById("RelaxMode")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    })
+  }
+  className="group flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-7 py-3.5 text-sm font-semibold text-gray-700 transition-all hover:border-blue-200 hover:text-blue-600"
+>
+  Our Approach
 
-              </button>
-
-
-              <button className="group flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-7 py-3.5 text-sm font-semibold text-gray-700 transition-all hover:border-blue-200 hover:text-blue-600">
-
-                Our Approach
-
-                <ArrowUpRight
-                  size={16}
-                  className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                />
-
-              </button>
+  <ArrowUpRight
+    size={16}
+    className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+  />
+</button>
 
             </motion.div>
 

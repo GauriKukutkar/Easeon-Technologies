@@ -6,6 +6,10 @@ import {
   ScanLine,
   Sparkles,
 } from "lucide-react";
+import Screen1 from "../assets/images/customer-app.jpeg";
+import Screen2 from "../assets/images/owner-app.jpeg";
+import Qr from "../assets/images/Relax_Mode_QR.jpg";
+
 
 const DownloadRelaxMode = () => {
   return (
@@ -200,7 +204,7 @@ const DownloadRelaxMode = () => {
               <div className="flex h-[115px] w-[115px] shrink-0 items-center justify-center rounded-xl border border-blue-100 bg-blue-50/50 p-2">
 
                 <img
-                  src="/images/relax-mode-qr.png"
+                  src={Qr}
                   alt="Scan to download Relax Mode"
                   className="h-full w-full object-contain"
                 />
@@ -248,72 +252,55 @@ const DownloadRelaxMode = () => {
             {/* ================================================= */}
             {/* STORE BUTTONS */}
             {/* ================================================= */}
+<div className="mt-5 flex flex-wrap gap-3">
 
-            <div className="mt-5 flex flex-wrap gap-3">
+  {/* Customer App */}
 
-              {/* Google Play */}
+  <a
+    href="https://play.google.com/store/apps/details?id=in.relaxmode&pcampaignid=web_share"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-5 py-3 shadow-sm transition-all hover:-translate-y-0.5 hover:border-blue-200 hover:shadow-md"
+  >
+    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50">
+      <Download size={16} className="text-blue-600" />
+    </div>
 
-              <a
-                href="#"
-                className="group flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-5 py-3 shadow-sm transition-all hover:-translate-y-0.5 hover:border-blue-200 hover:shadow-md"
-              >
+    <div>
+      <p className="text-[9px] uppercase tracking-wider text-gray-400">
+        Download For
+      </p>
 
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50">
+      <p className="text-xs font-bold text-gray-900">
+        Customer App
+      </p>
+    </div>
+  </a>
 
-                  <Download
-                    size={16}
-                    className="text-blue-600"
-                  />
+  {/* Salon Partner App */}
 
-                </div>
+  <a
+    href="https://play.google.com/store/apps/details?id=in.relaxmode.salon&pcampaignid=web_share"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-5 py-3 shadow-sm transition-all hover:-translate-y-0.5 hover:border-blue-200 hover:shadow-md"
+  >
+    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50">
+      <Sparkles size={16} className="text-blue-600" />
+    </div>
 
-                <div>
+    <div>
+      <p className="text-[9px] uppercase tracking-wider text-gray-400">
+        Download For
+      </p>
 
-                  <p className="text-[9px] uppercase tracking-wider text-gray-400">
-                    Available on
-                  </p>
+      <p className="text-xs font-bold text-gray-900">
+        Salon Partner App
+      </p>
+    </div>
+  </a>
 
-                  <p className="text-xs font-bold text-gray-900">
-                    Google Play
-                  </p>
-
-                </div>
-
-              </a>
-
-
-              {/* App Store */}
-
-              <a
-                href="#"
-                className="group flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-5 py-3 shadow-sm transition-all hover:-translate-y-0.5 hover:border-blue-200 hover:shadow-md"
-              >
-
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50">
-
-                  <Sparkles
-                    size={16}
-                    className="text-blue-600"
-                  />
-
-                </div>
-
-                <div>
-
-                  <p className="text-[9px] uppercase tracking-wider text-gray-400">
-                    Download on
-                  </p>
-
-                  <p className="text-xs font-bold text-gray-900">
-                    App Store
-                  </p>
-
-                </div>
-
-              </a>
-
-            </div>
-
+</div>
           </motion.div>
 
 
@@ -375,7 +362,7 @@ const DownloadRelaxMode = () => {
             >
 
               <img
-                src="/images/relax-phone-screen-2.png"
+                src={Screen2}
                 alt="Relax Mode mobile application"
                 className="h-full w-full object-cover"
               />
@@ -400,7 +387,7 @@ const DownloadRelaxMode = () => {
             >
 
               <img
-                src="/images/relax-phone-screen-1.png"
+                src={Screen1}
                 alt="Relax Mode booking application"
                 className="h-full w-full object-cover"
               />

@@ -76,7 +76,7 @@ return (
     className="absolute -left-20 top-0 h-72 w-72 rounded-full bg-blue-100 blur-[130px] opacity-50"
   />
 
-  <div className="max-w-7xl mx-auto px-6 lg:px-10">
+  <div className="max-w-7xl -mt-20  mx-auto px-6 lg:px-10">
 
     <motion.span
       initial={{ opacity: 0, x: -20 }}

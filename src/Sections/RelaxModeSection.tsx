@@ -13,7 +13,7 @@ import {
 
 const RelaxModeSection = () => {
   return (
-    <section className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-28">
+    <section className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-28" id="RelaxMode">
 
       {/* BACKGROUND */}
 
@@ -247,16 +247,19 @@ const RelaxModeSection = () => {
 
             {/* CTA */}
 
-            <button className="group mt-8 flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition-all hover:bg-blue-700">
+            <a
+  href="https://relaxmode.in"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group mt-8 inline-flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition-all hover:bg-blue-700"
+>
+  Explore Relax Mode
 
-              Explore Relax Mode
-
-              <ArrowRight
-                size={17}
-                className="transition-transform group-hover:translate-x-1"
-              />
-
-            </button>
+  <ArrowRight
+    size={17}
+    className="transition-transform group-hover:translate-x-1"
+  />
+</a>
 
           </motion.div>
 

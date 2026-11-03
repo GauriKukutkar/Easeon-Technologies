@@ -95,18 +95,25 @@ const About = () => {
                 className="mt-10 flex flex-wrap gap-5"
               >
 
-                <button className="group flex items-center gap-2 rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-blue-700 hover:shadow-2xl">
-                  Book a Free Consultation
-                  <ArrowRight
-                    size={18}
-                    className="transition group-hover:translate-x-1"
-                  />
-                </button>
+                <a
+  href="/contact"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group flex items-center gap-2 rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-blue-700 hover:shadow-2xl"
+>
+  Book a Free Consultation
+  <ArrowRight size={18} className="transition group-hover:translate-x-1" />
+</a>
 
-                <button className="group flex items-center gap-2 rounded-xl border border-gray-300 bg-white px-8 py-4 font-semibold text-gray-700 transition hover:border-blue-600 hover:text-blue-600">
-                  <PlayCircle size={18} />
-                  Watch Our Story
-                </button>
+<a
+  href="/portfolio"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group flex items-center gap-2 rounded-xl border border-gray-300 bg-white px-8 py-4 font-semibold text-gray-700 transition hover:border-blue-600 hover:text-blue-600"
+>
+  <PlayCircle size={18} />
+  View Our Portfolio
+</a>
 
               </motion.div>
 
@@ -298,7 +305,7 @@ const About = () => {
 
       {/* ===================== VISION & MISSION ===================== */}
 
-<section className="relative overflow-hidden bg-white py-24 sm:py-28 lg:py-32">
+<section className="relative overflow-hidden -mt-15 bg-white py-24 sm:py-28 lg:py-32">
 
   {/* Background Glow */}
 
