@@ -103,15 +103,15 @@ const Team = () => {
           name: "Rahul Borkar",
           role: "Founder",
           image: Rahul,
-          linkedin: "https://www.linkedin.com/",
-          email: "mailto:rahul@easeontech.com",
+          linkedin: "https://www.linkedin.com/in/rahul-borkar-57730712a/",
+          email: "mailto:easeontechnologies@gmail.com",
         },
         {
           name: "Minal Sonsare",
           role: "Co-Founder & CEO",
           image: Minal,
-          linkedin: "https://www.linkedin.com/",
-          email: "mailto:minal@easeontech.com",
+          linkedin: "https://www.linkedin.com/in/minal-sonsare-2a82542b3/",
+          email: "mailto:easeontechnologies@gmail.com",
         },
       ].map((member, index) => (
 
@@ -195,22 +195,22 @@ const Team = () => {
           name: "Vrushabh Latkar",
           role: "Graphics Designer",
           image: Vrushabh,
-          linkedin: "https://www.linkedin.com/",
-          email: "mailto:vrushabh@easeontech.com",
+          linkedin: "https://www.linkedin.com/in/vrushabh-latkar-3338a03a2/",
+          email: "mailto:easeontechnologies@gmail.com",
         },
         {
           name: "Gauri Kukutkar",
           role: "Sr. Software Developer",
           image: Gauri,
-          linkedin: "https://www.linkedin.com/",
-          email: "mailto:gauri@easeontech.com",
+          linkedin: "https://www.linkedin.com/in/gauri-kukutkar-09306b364/",
+          email: "mailto:easeontechnologies@gmail.com",
         },
         {
           name: "Sampriti Ganvir",
           role: "Jr. Software Developer",
           image: Sampriti,
-          linkedin: "https://www.linkedin.com/",
-          email: "mailto:sampriti@easeontech.com",
+          linkedin: "https://www.linkedin.com/in/sampriti-ganvir-6a0a98368/",
+          email: "mailto:easeontechnologies@gmail.com",
         },
       ].map((member, index) => (
 

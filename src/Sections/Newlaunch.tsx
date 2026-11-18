@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import {
   ArrowUpRight,
   Sparkles,
@@ -6,7 +7,9 @@ import {
   Zap,
 } from "lucide-react";
 
+
 const NewLaunch = () => {
+  const navigate = useNavigate();
   return (
     <section className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-28">
 
@@ -132,16 +135,17 @@ const NewLaunch = () => {
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
 
-              <button className="group flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition-all hover:bg-blue-700 hover:shadow-xl">
+              <button
+  onClick={() => navigate("/contact")}
+  className="group flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition-all hover:bg-blue-700 hover:shadow-xl"
+>
+  Stay Tuned
 
-                Stay Tuned
-
-                <ArrowUpRight
-                  size={17}
-                  className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
-                />
-
-              </button>
+  <ArrowUpRight
+    size={17}
+    className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
+  />
+</button>
 
 
               <div className="flex items-center gap-2 text-sm text-gray-400">
