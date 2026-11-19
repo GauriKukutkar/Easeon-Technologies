@@ -297,7 +297,7 @@ const Footer = () => {
   {/* Email */}
 
   <a
-    href="mailto:easeontechofficial@gmail.com"
+    href="mailto:easeontechnologies@gmail.com"
     className="group flex items-start gap-4"
   >
     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#1C4387] bg-[#0A2A67] text-[#43A5FF] transition-all duration-300 group-hover:bg-[#1A75FF] group-hover:text-white">
@@ -310,7 +310,7 @@ const Footer = () => {
       </p>
 
       <span className="text-sm text-[#BFD3F8]">
-        easeontechofficial@gmail.com
+        easeontechnologies@gmail.com
       </span>
     </div>
   </a>
