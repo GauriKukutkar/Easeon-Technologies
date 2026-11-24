@@ -13,7 +13,7 @@ const FounderStory = () => {
   return (
 
     <> 
-    <section className="relative overflow-hidden bg-white py-24 sm:py-32 lg:py-40">
+    <section className="relative overflow-hidden bg-white py-24 sm:py-32 lg:py-40" id="founder-story">
 
       {/* ================================================= */}
       {/* BACKGROUND GRID */}

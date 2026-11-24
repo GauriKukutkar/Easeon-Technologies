@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowUpRight, Layers3 } from "lucide-react";
-import { useRef } from "react";
+import { useRef  } from "react";
+import { useNavigate } from "react-router-dom";
 
 const projects = [
   {
@@ -108,6 +109,8 @@ const ProjectCard = ({
     [70, 0, -30]
   );
 
+  const navigate = useNavigate();
+  
   return (
     <div
       ref={ref}
@@ -201,22 +204,17 @@ const ProjectCard = ({
               <p className="text-sm leading-7 text-gray-400 sm:text-base">
                 {project.description}
               </p>
+<button
+  type="button"
+  onClick={() => navigate("/portfolio")}
+  className="group mt-7 inline-flex items-center gap-3 text-sm font-semibold text-white"
+>
+  Explore project
 
-              <button
-                type="button"
-                className="group mt-7 inline-flex items-center gap-3 text-sm font-semibold text-white"
-              >
-                Explore project
-
-                <span className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 transition-all group-hover:border-blue-400 group-hover:bg-blue-500 group-hover:text-white">
-
-                  <ArrowUpRight
-                    size={15}
-                  />
-
-                </span>
-
-              </button>
+  <span className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 transition-all group-hover:border-blue-400 group-hover:bg-blue-500 group-hover:text-white">
+    <ArrowUpRight size={15} />
+  </span>
+</button>
 
             </div>
 

@@ -296,19 +296,22 @@ const Portfolio = () => {
                 build carefully and keep improving after launch.
               </p>
 
-              <button
-                className="group mt-8 flex w-fit items-center gap-3 text-sm font-semibold text-white"
-              >
+             <button
+  type="button"
+  onClick={() =>
+    document.getElementById("founder-story")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    })
+  }
+  className="group mt-8 flex w-fit items-center gap-3 text-sm font-semibold text-white"
+>
+  Read the story
 
-                Read the story
-
-                <span className="flex h-8 w-8 items-center justify-center rounded-full border border-white/15 transition-all group-hover:bg-white group-hover:text-black">
-
-                  <ArrowUpRight size={15} />
-
-                </span>
-
-              </button>
+  <span className="flex h-8 w-8 items-center justify-center rounded-full border border-white/15 transition-all group-hover:bg-white group-hover:text-black">
+    <ArrowUpRight size={15} />
+  </span>
+</button>
 
             </div>
 
