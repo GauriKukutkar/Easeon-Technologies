@@ -79,13 +79,14 @@ return (
             transition={{ delay: .6 }}
             className="mt-10 flex flex-wrap gap-5"
           >
-
-           <button
-  onClick={() => navigate("/contact")}
-  className="rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-blue-700 hover:shadow-2xl"
+<a
+  href="https://calendly.com/borkar-rahul002/30min?back=1&month=2026-11"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-blue-700 hover:shadow-2xl"
 >
   Start Your Project
-</button>
+</a>
 
 <button
   onClick={() => navigate("/portfolio")}

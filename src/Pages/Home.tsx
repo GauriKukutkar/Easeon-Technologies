@@ -169,12 +169,14 @@ const process = [
 
               <div className="mt-10 flex flex-wrap gap-5">
 
-<Link
-  to="/contact"
+<a
+  href="https://calendly.com/borkar-rahul002/30min?back=1&month=2026-11"
+  target="_blank"
+  rel="noopener noreferrer"
   className="group inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-7 py-4 font-semibold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
 >
   Book a Free Consultation
-</Link>
+</a>
 
 
                 <button
@@ -667,16 +669,17 @@ const process = [
 
     <div className="mt-16 flex justify-center">
 
-      <button className="group flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-8 py-4 font-semibold shadow-sm transition hover:border-blue-200 hover:shadow-lg">
+     <Link
+  to="/solutions"
+  className="group flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-8 py-4 font-semibold shadow-sm transition hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg"
+>
+  View All Solutions
 
-        View All Solutions
-
-        <ArrowRight
-          size={18}
-          className="transition group-hover:translate-x-1"
-        />
-
-      </button>
+  <ArrowRight
+    size={18}
+    className="transition group-hover:translate-x-1"
+  />
+</Link>
 
     </div>
 

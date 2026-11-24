@@ -22,6 +22,7 @@ import CookiePolicy from "@/Pages/CookiePolicy";
 import HelpCenter from "@/Pages/HelpCenter";
 import TermsConditions from "@/Pages/Termsconditions";
 import Privacypolicy from "@/Pages/Privacypolicy";
+import Solutions from "@/Pages/Solutions";
 
 export const router = createBrowserRouter([
   {
@@ -127,6 +128,11 @@ export const router = createBrowserRouter([
 {
   path: "Privacypolicy",
   element: <Privacypolicy />,
+},
+
+{
+  path: "Solutions",
+  element: <Solutions />,
 },
 
 

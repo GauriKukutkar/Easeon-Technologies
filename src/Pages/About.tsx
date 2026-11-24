@@ -96,7 +96,7 @@ const About = () => {
               >
 
                 <a
-  href="/contact"
+  href="https://calendly.com/borkar-rahul002/30min?back=1&month=2026-11"
   target="_blank"
   rel="noopener noreferrer"
   className="group flex items-center gap-2 rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-blue-700 hover:shadow-2xl"

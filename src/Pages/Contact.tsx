@@ -857,13 +857,15 @@ const Contact = () => {
               {industry.description}
             </p>
 
-            <Link
-              to="/contact"
-              className="mt-6 inline-flex items-center gap-2 text-xs font-semibold text-blue-600 transition-all group-hover:gap-3"
-            >
-              Discuss your project
-              <ArrowUpRight size={15} />
-            </Link>
+            <a
+  href="https://calendly.com/borkar-rahul002/30min?back=1&month=2026-11"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-6 inline-flex items-center gap-2 text-xs font-semibold text-blue-600 transition-all group-hover:gap-3"
+>
+  Discuss your project
+  <ArrowUpRight size={15} />
+</a>
           </motion.div>
         );
       })}
@@ -905,7 +907,7 @@ const Contact = () => {
           you understand the next steps.
         </p>
 
-        <Link
+          <Link
           to="/contact"
           className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#51C9F0] hover:gap-3"
         >
@@ -1004,17 +1006,19 @@ const Contact = () => {
 
     <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
 
-      <Link
-        to="/contact"
-        className="group inline-flex items-center justify-center gap-3 rounded-full bg-blue-600 px-8 py-4 text-sm font-semibold text-white shadow-[0_12px_35px_rgba(8,102,255,0.3)] transition-all hover:-translate-y-1 hover:bg-blue-500"
-      >
-        Start Your Project
+      <a
+  href="https://calendly.com/borkar-rahul002/30min?back=1&month=2026-11"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group inline-flex items-center justify-center gap-3 rounded-full bg-blue-600 px-8 py-4 text-sm font-semibold text-white shadow-[0_12px_35px_rgba(8,102,255,0.3)] transition-all hover:-translate-y-1 hover:bg-blue-500"
+>
+  Start Your Project
 
-        <ArrowUpRight
-          size={18}
-          className="transition-transform group-hover:rotate-45"
-        />
-      </Link>
+  <ArrowUpRight
+    size={18}
+    className="transition-transform group-hover:rotate-45"
+  />
+</a>
 
       <Link
         to="/portfolio"
@@ -1061,13 +1065,15 @@ const Contact = () => {
         </p>
       </div>
 
-      <Link
-        to="/contact"
-        className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition-all hover:gap-3"
-      >
-        Discuss an idea
-        <ArrowUpRight size={17} />
-      </Link>
+      <a
+  href="https://calendly.com/borkar-rahul002/30min"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition-all hover:gap-3"
+>
+  Discuss an idea
+  <ArrowUpRight size={17} />
+</a>
 
     </div>
 

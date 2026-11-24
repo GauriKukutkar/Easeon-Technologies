@@ -4,7 +4,7 @@ import {
   CheckCircle2,
   Download,
   ScanLine,
-  Sparkles,
+  // Sparkles,
 } from "lucide-react";
 import Screen1 from "../assets/images/customer-app.jpeg";
 import Screen2 from "../assets/images/owner-app.jpeg";
@@ -286,7 +286,7 @@ const DownloadRelaxMode = () => {
     className="group flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-5 py-3 shadow-sm transition-all hover:-translate-y-0.5 hover:border-blue-200 hover:shadow-md"
   >
     <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50">
-      <Sparkles size={16} className="text-blue-600" />
+      <Download size={16} className="text-blue-600" />
     </div>
 
     <div>
